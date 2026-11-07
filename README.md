@@ -1,15 +1,16 @@
 <h1 align="center">Hi, I'm Suliman Mousa 👋</h1>
 
-<h3 align="center">Software Engineer · Full-Stack Development · Software Architecture · Technical Leadership</h3>
+<h3 align="center">Full-Stack Software Engineer · Technical Lead</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/suliman-mousa-2a5686242">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white" />
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:slemanra38@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail&logoColor=white" />
+    <img alt="Email" src="https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail&logoColor=white" />
   </a>
-  <img src="https://img.shields.io/badge/Based%20in-Germany-4B5563?style=flat" />
+  <img alt="Based in Osnabrück, Germany" src="https://img.shields.io/badge/Based%20in-Osnabr%C3%BCck%2C%20Germany-4B5563?style=flat" />
+  <img alt="Authorized to work in Germany" src="https://img.shields.io/badge/Work%20authorization-Germany-16A34A?style=flat" />
 </p>
 
 ---
@@ -22,7 +23,7 @@ I work across the full technical lifecycle — from **requirements analysis and 
 
 My experience includes **multi-tenant systems, RBAC, business workflows, booking & scheduling systems, geospatial operations, real-time communication, financial workflows, and API-driven architectures**.
 
-I've led engineering teams of **4–7 people**, combining hands-on development with technical direction, architecture planning, code review, testing, and production delivery.
+I've led engineering teams of **4–7 people**, combining hands-on development with technical direction, architecture planning, backend design, code review, testing, and production delivery.
 
 My broader experience also includes **restaurant management, e-commerce, education, real estate, government services, and SEO & web performance**.
 
@@ -57,34 +58,39 @@ My broader experience also includes **restaurant management, e-commerce, educati
 
 ### 💼 Selected Work
 
+> Source code for client projects is private. Each repository below holds the public **architecture documentation, diagrams, engineering reports, and test reports**.
+
 #### 🚗 Rento Car
 
-**Multi-Tenant Car Rental Platform**
+**Multi-Tenant Car Rental Platform** · in production with **8 rental companies across 5 cities**
 
-A car rental platform built across three applications, covering customer-facing services, rental operations, and administration.
+[![Website](https://img.shields.io/badge/Website-rentocar24.com-111827?style=flat)](https://rentocar24.com/)
+[![App Store](https://img.shields.io/badge/App%20Store-Rento%20Car-0D96F6?style=flat&logo=apple&logoColor=white)](https://apps.apple.com/de/app/rento-car-car-rental/id6760517523)
+[![Google Play](https://img.shields.io/badge/Google%20Play-Rento%20Car-34A853?style=flat&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.rentocar.app)
+
+A car rental platform built across three client applications on a shared Laravel/MySQL backend, covering customer services, rental-office operations, and platform administration. Booking status changes are synchronized in real time across all platforms.
 
 ##### 🌐 Customer Web
 
-Next.js-based customer platform with BFF architecture, server-side rendering, authentication, SEO, booking workflows, availability handling, and geospatial delivery.
+Next.js App Router platform with a Backend-for-Frontend (BFF), HttpOnly cookie sessions, server-side rendering, SEO, booking workflows, availability handling, and geospatial delivery.
 
-**Architecture →** `RENTO_CAR_WEB_DIAGRAM_URL`
-**Repository →** `RENTO_CAR_WEB_REPOSITORY_URL`
+**Architecture →** [Web-architecture.md](https://github.com/suliman-mousa/Rento-Car/blob/main/Web-architecture.md) · **Diagrams →** [Web-diagrams.md](https://github.com/suliman-mousa/Rento-Car/blob/main/diagrams/Web-diagrams.md)
 
-##### 📱 Customer Mobile App
+##### 📱 Mobile App — Customer & Rental Office
 
-Flutter mobile application for customers covering vehicle discovery, booking, delivery locations, notifications, offers, coupons, and rental workflows.
+One Flutter application with two modes: customers discover vehicles, book, choose delivery locations, and use offers and coupons; rental offices manage cars, accept or reject bookings, and handle deliveries (BLoC + Clean Architecture).
 
-**Architecture →** `RENTO_CAR_MOBILE_DIAGRAM_URL`
-**Repository →** `RENTO_CAR_MOBILE_REPOSITORY_URL`
+**Architecture →** [mobile-architecture.md](https://github.com/suliman-mousa/Rento-Car/blob/main/mobile-architecture.md) · **Diagrams →** [mobile-diagrams.md](https://github.com/suliman-mousa/Rento-Car/blob/main/diagrams/mobile-diagrams.md)
 
 ##### 🖥️ Admin Dashboard
 
-Administrative platform for managing users, rental companies, bookings, vehicles, operational workflows, and platform-level permissions.
+React 19 / Vite administration platform for users, rental companies, bookings, vehicles, financial settlements, real-time notifications, and platform-level permissions.
 
-**Architecture →** `RENTO_CAR_DASHBOARD_DIAGRAM_URL`
-**Repository →** `RENTO_CAR_DASHBOARD_REPOSITORY_URL`
+**Architecture →** [dashboard-architecture.md](https://github.com/suliman-mousa/Rento-Car/blob/main/dashboard-architecture.md) · **Diagrams →** [dashboard-diagrams.md](https://github.com/suliman-mousa/Rento-Car/blob/main/diagrams/dashboard-diagrams.md)
 
-**Leadership:** Led a 7-person engineering team across architecture, development, task planning, code review, testing, and production delivery.
+**Repository →** [Rento-Car](https://github.com/suliman-mousa/Rento-Car) · **Test reports →** [Test](https://github.com/suliman-mousa/Rento-Car/tree/main/Test) · **Engineering improvements →** [reports](https://github.com/suliman-mousa/Rento-Car/tree/main/engineering%20Improvements)
+
+**Leadership:** Led a 7-person engineering team across architecture, development, task planning, code review, testing, and production delivery; designed and supervised the Laravel/MySQL backend.
 
 ---
 
@@ -92,40 +98,44 @@ Administrative platform for managing users, rental companies, bookings, vehicles
 
 **Telemedicine Platform**
 
-A platform connecting patients with doctors through scheduled online consultations.
+A platform connecting patients with doctors through scheduled online consultations, with a server-authoritative Google Meet flow and appointment status synchronized in real time across all platforms.
 
-##### 📱 Mobile App
+##### 📱 Mobile App — Patient & Doctor
 
-Flutter application supporting patient and doctor workflows, timezone-aware scheduling, booking management, Google Meet integration, OAuth, notifications, and multilingual support.
+Flutter application for patient and doctor workflows: timezone-aware scheduling across countries, booking management, Google Meet via server-side OAuth, push notifications, and English / Arabic / German support.
 
-**Architecture →** `ASKTABIB_MOBILE_DIAGRAM_URL`
-**Repository →** `ASKTABIB_MOBILE_REPOSITORY_URL`
+**Architecture →** [App-Architecture.md](https://github.com/suliman-mousa/AskTabib/blob/main/App-Architecture.md) · **Diagrams →** [APP_ARCHITECTURE_DIAGRAMS.md](https://github.com/suliman-mousa/AskTabib/blob/main/diagrams/APP_ARCHITECTURE_DIAGRAMS.md)
 
 ##### 🖥️ Admin Dashboard
 
-Web-based administration platform for managing doctors, patients, bookings, content, and role-based operational workflows.
+React 19 administration platform for doctors, patients, bookings, content, finance, and role-based operational workflows, with real-time booking alerts via web push.
 
-**Architecture →** `ASKTABIB_DASHBOARD_DIAGRAM_URL`
-**Repository →** `ASKTABIB_DASHBOARD_REPOSITORY_URL`
+**Architecture →** [Web-Admin-Architecture.md](https://github.com/suliman-mousa/AskTabib/blob/main/Web-Admin-Architecture.md) · **Diagrams →** [Web-Admin-Diagrams.md](https://github.com/suliman-mousa/AskTabib/blob/main/diagrams/Web-Admin-Diagrams.md)
 
-**Leadership:** Led a 4-person engineering team across planning, architecture, development, testing, UX reviews, and production releases.
+**Repository →** [AskTabib](https://github.com/suliman-mousa/AskTabib) · **Test reports →** [TEST](https://github.com/suliman-mousa/AskTabib/tree/main/TEST)
+
+**Leadership:** Led a 4-person engineering team across planning, architecture, development, testing, UX reviews, and production releases; designed and supervised the Laravel/MySQL backend.
 
 ---
 
 #### 🚚 Gaz Express
 
-**Logistics & Delivery Platform**
+**Logistics & Delivery Platform** · **2,500+ orders** across **30 delivery zones**
 
-A delivery application with geospatial routing across **30 operational zones**, configurable dispatch rules, agent-zone management, scheduled and immediate orders, and real-time order states.
+[![Google Play](https://img.shields.io/badge/Google%20Play-Gaz%20Express-34A853?style=flat&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.gazxpress24.app)
+[![App Store](https://img.shields.io/badge/App%20Store-Gaz%20Express-0D96F6?style=flat&logo=apple&logoColor=white)](https://apps.apple.com/de/app/gazxpress/id6752856616)
 
-##### 📱 Mobile App
+A delivery platform with coordinate-based zone routing, admin-managed agent–zone assignment, scheduled and immediate orders, and conflict-free dispatch enforced at the persistence layer.
 
-Flutter application supporting customer and delivery-agent workflows, location-based operations, order management, notifications, and real-time status updates.
+##### 📱 Mobile App — Customer, Agent & Admin
 
-**Architecture →** `GAZ_EXPRESS_MOBILE_DIAGRAM_URL`
-**Repository →** `GAZ_EXPRESS_MOBILE_REPOSITORY_URL`
+One Flutter application with three role-based experiences: customer ordering, map-integrated agent field operations, and admin control of zones, agents, pricing, and finance — with order status synchronized in real time across all roles.
 
-**Leadership:** Led a 4-person engineering team from architecture and development through production launch, with ongoing testing, UX review, and quality improvements.
+**Architecture →** [ARCHITECTURE.md](https://github.com/suliman-mousa/Gaz-Express/blob/main/ARCHITECTURE.md) · **Diagrams →** [DIAGRAMS.md](https://github.com/suliman-mousa/Gaz-Express/blob/main/DIAGRAMS.md) · **Test report →** [ENGINEERING_TEST_REPORT.md](https://github.com/suliman-mousa/Gaz-Express/blob/main/ENGINEERING_TEST_REPORT.md)
+
+**Repository →** [Gaz-Express](https://github.com/suliman-mousa/Gaz-Express)
+
+**Leadership:** Led a 4-person engineering team from architecture and development through production launch, with ongoing testing, UX review, and quality improvements; designed and supervised the Laravel/MySQL backend.
 
 ---
 
@@ -133,10 +143,23 @@ Flutter application supporting customer and delivery-agent workflows, location-b
 
 **Business Process Simulation**
 
-An XML-driven process simulation engine with token-based execution, real-time visualization, event logging, throughput analysis, and bottleneck identification.
+A browser-based simulation engine built on `bpmn-js`: XML-driven runtime configuration, token-based execution with live visualization, event capture and persistence, and execution measurement for throughput and bottleneck analysis.
 
-**Architecture →** `BPMN_DIAGRAM_URL`
-**Repository →** `BPMN_REPOSITORY_URL`
+**Architecture →** [ARCHITECTURE.md](https://github.com/suliman-mousa/BPMN-Process-Simulator/blob/main/ARCHITECTURE.md) · **Diagrams →** [DIAGRAMS.md](https://github.com/suliman-mousa/BPMN-Process-Simulator/blob/main/DIAGRAMS.md)
+
+**Repository →** [BPMN-Process-Simulator](https://github.com/suliman-mousa/BPMN-Process-Simulator)
+
+---
+
+#### 🍽️ Restaurant Ordering Platform
+
+**Customer Ordering Frontend · European Market**
+
+React customer ordering client for a multi-location restaurant platform: menu discovery, product customization, dynamic pricing, cart, checkout, invoicing, guest and registered journeys, and EN/DE cookie consent.
+
+**Architecture →** [ARCHITECTURE.md](https://github.com/suliman-mousa/restaurant-ordering-platform/blob/main/ARCHITECTURE.md) · **Diagrams →** [DIAGRAMS.md](https://github.com/suliman-mousa/restaurant-ordering-platform/blob/main/DIAGRAMS.md)
+
+**Repository →** [restaurant-ordering-platform](https://github.com/suliman-mousa/restaurant-ordering-platform)
 
 ---
 
@@ -144,29 +167,31 @@ An XML-driven process simulation engine with token-based execution, real-time vi
 
 **Healthcare Management Platform**
 
-A distributed healthcare management platform with structured data layers, RBAC, fine-grained permissions, and security practices informed by healthcare requirements.
-`
-**Repository →** `MEDILINK_REPOSITORY_URL`
+A distributed healthcare management platform with role-scoped environments (Reception, Clinical, Inventory, Administration), structured data layers, RBAC, fine-grained permissions, and security practices informed by healthcare requirements.
+
+*Documentation coming soon.*
 
 ---
 
 ### 🛠️ Core Stack
 
-| Area               | Technologies                                                               |
-| ------------------ | -------------------------------------------------------------------------- |
-| **Frontend**       | React · Next.js · TypeScript · Zustand · Redux · Tailwind CSS              |
-| **Mobile**         | Flutter · Dart · BLoC/Cubit                                                |
-| **Backend**        | Node.js · PHP · Laravel · REST APIs                                        |
-| **Data**           | MySQL · Database Design                                                    |
-| **Infrastructure** | Docker · Nginx · Linux/Ubuntu · GitLab CI · CI/CD                          |
-| **Testing**        | Vitest · Automated Testing · Code Review                                   |
-| **Integrations**   | Google Maps · Google Meet · Firebase · OAuth 2.0 · Meta Graph API · Twilio |
+| Area               | Technologies                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------ |
+| **Frontend**       | React · Next.js · TypeScript · Zustand · Redux Toolkit · Tailwind CSS                |
+| **Mobile**         | Flutter · Dart · BLoC/Cubit · Clean Architecture                                     |
+| **Backend**        | PHP · Laravel · Sanctum · Node.js · REST APIs                                        |
+| **Data**           | MySQL · Database Design                                                              |
+| **Infrastructure** | Docker · Nginx · Linux/Ubuntu · GitHub Actions · GitLab CI                           |
+| **Testing**        | Vitest · Playwright · React Testing Library · MSW · bloc_test · mocktail             |
+| **Integrations**   | Google Maps · Google Meet · Firebase · OAuth 2.0 · Pusher · Meta Graph API · Twilio  |
 
 ---
 
 ### 🧠 Engineering Focus
 
 I focus on **understanding the business and operational problem behind a feature** — modeling business logic, defining system boundaries, considering technical trade-offs, and turning requirements into maintainable production software.
+
+I document systems the way I build them: **architecture descriptions aligned with ISO/IEC/IEEE 42010, C4 diagrams, Architecture Decision Records, and risk-based test strategies**, kept in the repository alongside the work.
 
 I enjoy working across the stack while also taking responsibility for **system design, technical decisions, and the overall quality of the solution**.
 

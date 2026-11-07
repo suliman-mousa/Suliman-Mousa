@@ -202,10 +202,6 @@ I enjoy working across the stack while also taking responsibility for **system d
 **B.Sc. Information Technology Engineering**
 Faculty of Engineering · 2024
 
-**Founder — TechNova Eagle**
-
-Building software products and operational systems across different business domains.
-
 ---
 
 ### 🌍 Languages
